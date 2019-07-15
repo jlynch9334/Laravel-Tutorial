@@ -7,13 +7,15 @@
         .is-complete {
             text-decoration: line-through;
         }
+        .title {
+            margin-top: 10px;
+        }
+        
     </style>
 </head>
 <body>
-
     <div class="container">
         @yield('content')
     </div>
-
 </body>
 </html>

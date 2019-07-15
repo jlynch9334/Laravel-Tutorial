@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-
     <h1 class="title">Edit Project</h1>
     <form method="POST" action="/projects/{{ $project->id }}" style="margin-bottom: 1em;">
         @method("PATCH")
@@ -30,6 +29,8 @@
         </div>
     </form>
 
+    @include ('errors')
+
     <form method="POST" action="/projects/{{ $project->id }}">
         @method("DELETE")
         @csrf
@@ -39,5 +40,4 @@
             </div>
         </div>
     </form>
-
 @endsection
